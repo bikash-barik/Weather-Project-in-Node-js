@@ -14,7 +14,7 @@ const replaceVal = (tempVal, orgVal) => {
   temperature = temperature.replace("{%tempstatus%}", orgVal.weather[0].main);
   return temperature;
 };
-
+fs.lstat
 const server = http.createServer((req, res) =>{
     if(req.url == "/"){
         requests('https://api.openweathermap.org/data/2.5/weather?q=Odisha&appid=abe7901a5fe9d6c45afde192a469cf54')
